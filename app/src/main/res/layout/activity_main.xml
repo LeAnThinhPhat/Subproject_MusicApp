@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071E22"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/menubtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/Menu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="80dp"
+        android:text="NOW PLAYING"
+        android:textColor="#F6F4F4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/menubtn"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/backbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="64dp"
+        android:text="Người lạ thoáng qua"
+        android:textAlignment="center"
+        android:textColor="#E61010"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtsub"
+        android:layout_width="371dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="48dp"
+        android:text="Nỗi buồn trong em chỉ còn thế thôi à? Sau những ngày dài, mỏi mệt em cần anh thế mà Cần đôi tay ôm em và nói: Em à Có anh mà, đừng khóc chuyện sẽ qua Nỗi buồn vơi hay anh nhạt mất đi rồi? Như những nụ cười nhạt khi anh phải đi rất vội Thời gian bên em có lẽ anh đã phung phí rồi Thôi nhé mình cũng chẳng cần phải thành đôi"
+        android:textAlignment="center"
+        android:textColor="#F6F0F0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom" />
+
+    <ImageView
+        android:id="@+id/imgsinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dinhtunghuy" />
+
+    <TextView
+        android:id="@+id/txtname1"
+        android:layout_width="172dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Người lạ thoáng qua"
+        android:textColor="#ECE9E9"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtsinger"
+        app:layout_constraintStart_toEndOf="@+id/imgsinger" />
+
+    <TextView
+        android:id="@+id/txtsinger"
+        android:layout_width="132dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Đinh Tùng Huy"
+        android:textColor="#F8F2F2"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgsinger" />
+
+    <ImageView
+        android:id="@+id/rew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:srcCompat="@drawable/lui" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tien" />
+
+    <ImageView
+        android:id="@+id/stop"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:srcCompat="@drawable/stop" />
+</androidx.constraintlayout.widget.ConstraintLayout>
