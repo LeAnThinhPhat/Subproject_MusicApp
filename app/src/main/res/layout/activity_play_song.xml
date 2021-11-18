@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#071E22">
+    android:background="#071E22"
+    app:layoutDescription="@xml/activity_play_song_scene">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#412323"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="733dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -54,6 +63,8 @@
         android:id="@+id/seekBar"
         android:layout_width="301dp"
         android:layout_height="15dp"
+        android:backgroundTint="#3D5A80"
+        android:thumb="@drawable/com_facebook_button_login_background"
         app:layout_constraintBottom_toTopOf="@+id/imgPlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,8 +89,8 @@
         android:layout_width="100dp"
         android:layout_height="34dp"
         android:text="Name Song"
-        android:textColor="#EE2E31"
         android:textAlignment="center"
+        android:textColor="#EE2E31"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
@@ -125,4 +136,20 @@
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:srcCompat="@drawable/menu" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="324dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="104dp"
+        android:alpha="0"
+        android:text="Nỗi buồn trong em chỉ còn thế thôi à? Sau những ngày dài, mỏi mệt em cần anh thế mà Cần đôi tay ôm em và nói: Em à Có anh mà, đừng khóc chuyện sẽ qua  Nỗi buồn vơi hay anh nhạt mất đi rồi? Như những nụ cười nhạt khi anh phải đi rất vội Thời gian bên em có lẽ anh đã phung phí rồi Thôi nhé mình cũng chẳng cần phải thành đôi"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
