@@ -62,11 +62,11 @@ public class PlaySong extends AppCompatActivity {
                 mSeekBarTime.setMax(mMediaPlayer.getDuration());
                 if(mMediaPlayer!=null && mMediaPlayer.isPlaying()){
                     mMediaPlayer.pause();
-                    clickStopService();//notification
+                //    clickStopService();//notification
                     play.setImageResource(R.drawable.stop);
                 }else{
                     mMediaPlayer.start();
-                    clickStartService();//notification
+                 //   clickStartService();//notification
                     play.setImageResource(R.drawable.play);
                 }
                 SongNames();

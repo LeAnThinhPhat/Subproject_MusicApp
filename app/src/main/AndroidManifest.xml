@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myappmusic" >
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
@@ -13,12 +14,18 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+        <service android:name=".MyService"/>
+        <receiver android:name=".MyReciver"/>
         <activity
             android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".List_Music"
             android:exported="false" />
+        <activity
+            android:name=".PlaySong"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >
@@ -28,8 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".MyService"/>
-        <receiver android:name=".MyReciver"/>
+
     </application>
 
 </manifest>

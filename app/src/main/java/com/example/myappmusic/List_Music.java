@@ -26,7 +26,7 @@ public class List_Music extends AppCompatActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_list_music);
 
         rcv = findViewById(R.id.rcv);
         mSongs = new ArrayList<Song>();
