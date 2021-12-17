@@ -2,4 +2,5 @@
     <string name="app_name">MyAppMusic</string>
     <string name="facebook_app_id">409578850753830</string>
     <string name="fb_login_protocol_scheme">fbxxx</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAUFEz8EhzrkORug4qlNKjQE7eQ-ap53z0</string>
 </resources>
